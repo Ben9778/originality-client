@@ -1,0 +1,19 @@
+<!--pages/payment/payment.wxml-->
+<view class="box">
+  <view class="header">
+    <view class="tips">
+      <image src="/static/vip1.svg"></image>
+      <span>{{content1}} | {{content2}}</span>
+    </view>
+  </view>
+  <view class="body">
+   <block wx:for="{{payOptions}}" wx:key="key">
+      <view class="{{currentTab==index?'body-box-color':'body-box'}}" bind:tap="change" data-index="{{index}}">
+        <view class="time">{{item.time}}</view>
+        <view class="price">{{item.price}}</view>
+        <view class="originprice">{{item.originprice}}</view>
+      </view>
+   </block>
+   <view class="btn" bind:tap="prepay">{{btntext}}</view>
+  </view>
+</view>

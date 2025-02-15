@@ -1,0 +1,122 @@
+/* pages/topic/topic.wxss */
+.box {
+  width: 100%;
+  height: 1450rpx;
+  overflow: hidden;
+  background-color: rgb(241, 245, 254);
+}
+
+.doc {
+  width: 80%;
+  height: 40%;
+  margin: 50rpx auto;
+  padding: 20rpx;
+  background-color: white;
+  border-top: 10rpx solid gray;
+  border-left: 10rpx solid gray;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.doc textarea {
+  line-height: 50rpx;
+  height: 85%;
+  margin: 0 auto;
+}
+
+.len {
+  position: absolute;
+  right: 20%;
+  top: 47%;
+  font-size: medium;
+  color: gray;
+}
+
+.clear {
+  width: 80rpx;
+  color: gray;
+  opacity: 0.8;
+  text-align: center;
+  position: absolute;
+  right: 10%;
+  top: 47%;
+  font-size: medium;
+}
+
+.titleProduce {
+  width: 85%;
+  height: 25%;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  border-right: 10rpx solid gray;
+  border-bottom: 10rpx solid gray;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  position: relative;
+}
+
+.img {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+.titlelist {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.titlelist span {
+  display: block;
+  width: 100%;
+  margin-top: 30rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.btn {
+  position: fixed;
+  width: 90%;
+  margin-left: 40rpx;
+  height: 80rpx;
+  bottom: 20rpx;
+  font-size: large;
+  background-color: fuchsia;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+ 
+}
+
+.btn text {
+  letter-spacing: 0.5ch;
+  line-height: 80rpx;
+}
+
+/*适配不同屏幕尺寸*/
+.lenmedia {
+  position: absolute;
+  right: 20%;
+  top: 55%;
+  font-size: medium;
+  color: gray;
+}
+
+.clearmedia {
+  width: 80rpx;
+  color: gray;
+  opacity: 0.8;
+  text-align: center;
+  position: absolute;
+  right: 10%;
+  top: 51%;
+  font-size: medium;
+}

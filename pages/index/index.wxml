@@ -1,0 +1,32 @@
+<view class="box">
+  <!--提问-->
+  <view class="showAnswer" hidden="{{!flag}}">{{questiondocker}}</view>
+  <!--时间-->
+  <view class="showtime" hidden="{{!flag}}">{{timedocker}}</view>
+  <!--回复框-->
+  <view class="response-text" hidden="{{!resshow}}">
+    <textarea value="{{responsedocker}}" maxlength="-1" auto-height="true" disabled="true"></textarea>
+  </view>
+  <view class="copyall" hidden="{{!copyswitch}}" bind:tap="copy">一键复制</view>
+  <view class="stopbtn" bind:tap="stop" hidden="{{!stopswitch}}">停止回答</view>
+  <!--加载显示顶层-->
+  <view class="{{screenclass1}}" hidden="{{!exampleswitch}}">
+    <view class="{{screenclass2}}">
+      <view class="example-box-title">"{{example1}}"</view>
+      <view class="example-box-btn" bind:tap="copyexample1">去试试</view>
+    </view>
+    <view class="{{screenclass2}}">
+      <view class="example-box-title">"{{example2}}"</view>
+      <view class="example-box-btn" bind:tap="copyexample2">去试试</view>
+    </view>
+  </view>
+  <!--底部框-->
+  <view class="footer-input">
+    <view class="text-area">
+      <input placeholder="写下你的灵感..." bindinput="getcontent"  value="{{content}}"></input>
+    </view>
+    <view class="text-icon" bind:tap="showquestion">
+      <image src="{{icon}}"></image>
+    </view>
+  </view>
+</view>

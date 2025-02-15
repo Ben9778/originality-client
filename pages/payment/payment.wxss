@@ -1,0 +1,77 @@
+/* pages/payment/payment.wxss */
+.box{
+  width: 100%;
+  height: 1450rpx;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(241,245,254);
+}
+.header{
+  width: 100%;
+  height: 10%;
+  background-color:rgb(78, 6, 6);
+  display: flex;
+  justify-content: center;
+}
+.tips{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: burlywood;
+}
+.tips image{
+  width: 35rpx;
+  height: 35rpx;
+}
+.body{
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  border-radius: 10px;
+}
+.body-box{
+  width: 45%;
+  height: 30%;
+  margin-top: 5%;
+  text-align: center;
+  background-color: rgb(243, 227, 227);
+  line-height: 70rpx;
+  border-radius: 10px;
+}
+/*选中后的样式*/
+.body-box-color{
+  width: 45%;
+  height: 30%;
+  margin-top: 5%;
+  text-align: center;
+  background-color: rgb(243, 227, 227);
+  line-height: 70rpx;
+  border-radius: 10px;
+  border: 2px solid rgb(123, 123, 187);
+}
+.time{
+  font-weight: bold;
+}
+.price{
+  font-size: smaller;
+}
+.originprice{
+  text-decoration: line-through;
+  font-size: small;
+  color: rgb(185, 185, 207);
+}
+.btn{
+  width: 60%;
+  height: 80rpx;
+  background-color: rgb(78, 6, 6);
+  border-radius: 20px;
+  margin-top: 80rpx;
+  color: burlywood;
+  text-align: center;
+  line-height: 80rpx;
+}

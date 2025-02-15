@@ -1,0 +1,24 @@
+<!--pages/topic/topic.wxml-->
+<view class="box">
+  <view class="doc">
+    <textarea disabled="{{disbtn}}" placeholder="输入您的内容,字数建议200-1500" maxlength="1500" value="{{content}}" bindinput="countlength"></textarea>
+    <image src="/static/1.svg" style="width: 30px;height: 30px;margin-top: 30rpx;"></image>
+    <span class="{{screenclass}}">{{currentlength}}/1500</span>
+    <view class="{{clearmedia}}" bind:tap="clearword" hidden="{{!flag}}">清空
+    </view>
+  </view>
+  <!--标题生成区-->
+  <view class="titleProduce">
+    <view class="img">
+      <image style="width: 100%;height: 100%;" src="{{titleimage}}" hidden="{{!iconbtn}}"></image>
+    </view>
+    <view class="titlelist" hidden="{{!textbtn}}">
+      <block wx:for="{{titles}}">
+        <span>标题{{index+1}}、{{item.title}}</span>
+      </block>
+    </view>
+  </view>
+  <view class="btn" bind:tap="producetitle">
+    <text>{{subtext}}</text>
+  </view>
+</view>

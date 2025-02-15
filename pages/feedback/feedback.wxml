@@ -1,0 +1,10 @@
+<!--pages/feedback/feedback.wxml-->
+<view>
+  <view class="content">
+    <textarea placeholder="请输入想要反馈的信息" bindinput="gettext"></textarea>
+  </view>
+  <view class="tel">
+    <input maxlength="20"  bindinput="getphone" placeholder="输入手机号码"/>
+  </view>
+  <view class="sub" bind:tap="sublime">提交</view>
+</view>

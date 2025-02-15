@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/topic/topic",
+    "pages/myhome/myhome",
+    "pages/equity/equity",
+    "pages/explain/explain",
+    "pages/feedback/feedback",
+    "pages/payment/payment",
+    "pages/logs/logs",
+    "pages/orders/orders"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D3D3D3",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "智能文案",
+        "iconPath": "/static/chatnav.png"
+      },
+      {
+        "pagePath": "pages/topic/topic",
+        "text": "智能标题",
+        "iconPath": "/static/titlenav.png"
+      },
+      {
+        "pagePath": "pages/myhome/myhome",
+        "text": "个人中心",
+        "iconPath": "/static/homenav.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

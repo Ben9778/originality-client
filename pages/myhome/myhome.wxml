@@ -1,0 +1,49 @@
+<!--pages/myhome/myhome.wxml-->
+<view class="box">
+  <!--头像区-->
+  <view clas="header">
+    <view class="header-left">
+      <image src="/static/l.png" style="width: 100%;height: 100%;"></image>
+    </view>
+    <view class="header-right">
+      <image src="{{vipicon}}" style="width: 50%;height: 40%;"></image>
+      <view>ID:{{id}}</view>
+    </view>
+  </view>
+  <!--开通会员-->
+  <view class="vip">
+    <view class="tips">
+      <image src="/static/vip1.svg"></image>
+      <span>{{tipscontent}}</span>
+    </view>
+    <view class="opennow" bind:tap="payment">{{btncontent}}</view>
+  </view>
+  <view class="count">
+    <view class="count-num">
+      <view>{{chatnum}}</view>
+      <view>文创次数</view>
+    </view>
+    <view class="count-num">
+      <view>{{titlenum}}</view>
+      <view>标题次数</view>
+    </view>
+  </view>
+  <view class="contract">
+    <view class="study" bind:tap="navtoexplain">
+      <span>使用说明</span>
+      <span>></span>
+    </view>
+    <view class="advice" bind:tap="navtofeedback">
+      <span>意见反馈</span>
+      <span>></span>
+    </view>
+    <view class="about" bind:tap="navtoequity">
+      <span>会员权益</span>
+      <span>></span>
+    </view>
+    <view class="orderCenter" bind:tap="navtoOrder">
+      <span>我的订单</span>
+      <span>></span>
+    </view>
+  </view>
+</view>

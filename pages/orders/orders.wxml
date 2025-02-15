@@ -1,0 +1,29 @@
+<!--pages/orders/orders.wxml-->
+<view class="box">
+  <view class="tip" hidden="{{flag}}">
+    <view>
+      <image src="{{tipimg}}"></image>
+    </view>
+    <view>{{tips}}</view>
+  </view>
+  <view class="order" hidden="{{!flag}}">
+    <block wx:for="{{orderlist}}" wx:key="key">
+      <view class="order-item">
+        <view class="orderno">订单号:{{item.orderNo}}</view>
+        <view class="order-item-box">
+          <view class="box-left">
+            <view class="box-left-img">
+              <image src="{{imgpath}}"></image>
+            </view>
+            <view class="box-left-content">
+              <view>{{description}}</view>
+              <view class="content">{{item.amount/100}}元</view>
+              <view class="content">{{item.createTime}}</view>
+            </view>
+          </view>
+          <view class="box-right">{{item.orderStatus}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

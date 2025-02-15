@@ -1,0 +1,5 @@
+/* pages/equity/equity.wxss */
+view{
+  width: 90%;
+  margin: 30rpx auto;
+}
