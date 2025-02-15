@@ -1,4 +1,5 @@
 // pages/topic/topic.js
+//生成标题功能
 Page({
 
   /**
